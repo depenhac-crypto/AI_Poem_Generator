@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/romantic" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/winter" rel="stylesheet" />
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to the AI Poem Generator</h1>
+        <h1>Welcome to the AI French Poem Generator</h1>
       </header>
       <main>
         <form id="poem-generator-form">
@@ -21,11 +24,15 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
         <div class="poem" id="poem"></div>
       </main>
+      <br />
+      <br />
+      <br />
       <footer>
         Built by
         <a

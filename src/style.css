@@ -1,6 +1,10 @@
 body {
-  background: pink;
-  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("https://www.dbackdrop.com/cdn/shop/files/GQ4-54-2.jpg?v=1744355867&width=562");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: helvetica, sans-serif;
 }
 a {
   color: #885df1;
@@ -18,6 +22,9 @@ h1 {
   font-size: 36px;
   line-height: 1.5;
   color: #272044;
+  font-family:
+    dancing script,
+    cursive;
 }
 form {
   padding: 30px;
@@ -50,6 +57,7 @@ form {
   font-size: 16px;
   padding: 20px;
   background-color: pink;
+  opacity: 0.7;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
   border-left: 3px solid #885df1;
   line-height: 2;
@@ -59,4 +67,5 @@ footer {
   text-align: center;
   margin-top: 20px;
   font-size: 13px;
+  color: #272044;
 }
