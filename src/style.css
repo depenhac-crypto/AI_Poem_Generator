@@ -29,15 +29,14 @@ h1 {
     cursive;
 }
 form {
-  padding: 30px;
-  .form-container {
-    background-color: pink;
-    box-shadow: 60px 20px 20px 60px rgba(65, 50, 100, 0.08);
-    border-radius: 10px;
-    display: flex;
-    margin-bottom: 30px;
-    padding: 15px 20px;
-  }
+  display: flex;
+}
+.form-container {
+  background-color: pink;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 15px 20px;
 }
 .instructions {
   padding: 16px;
@@ -70,10 +69,7 @@ form {
 .poem strong {
   color: #885df1;
 }
-form {
-  display: flex;
-  margin-bottom: 30px;
-}
+
 .hint {
   line-height: 1.5;
   color: #272044;
