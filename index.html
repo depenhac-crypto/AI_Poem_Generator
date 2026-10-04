@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -12,20 +13,18 @@
         <h1>Welcome to the AI Poem Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter a topic for your poem"
+            autofocus
+            required
             autocomplete="off"
             class="instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The Raven
-          <br />
-          The Road Not Taken
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         Built by
