@@ -4,6 +4,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
   font-family: helvetica, sans-serif;
 }
 a {
@@ -28,11 +30,14 @@ h1 {
 }
 form {
   padding: 30px;
-  background-color: pink;
-  box-shadow: 60px 20px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
-  display: flex;
-  margin-bottom: 30px;
+  .form-container {
+    background-color: pink;
+    box-shadow: 60px 20px 20px 60px rgba(65, 50, 100, 0.08);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+  }
 }
 .instructions {
   padding: 16px;
@@ -62,10 +67,43 @@ form {
   border-left: 3px solid #885df1;
   line-height: 2;
 }
-
+.poem strong {
+  color: #885df1;
+}
+form {
+  display: flex;
+  margin-bottom: 30px;
+}
+.hint {
+  line-height: 1.5;
+  color: #272044;
+  margin-top: 5px;
+  opacity: none;
+  font-size: 12px;
+}
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
   margin-top: 20px;
   font-size: 13px;
   color: #272044;
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
